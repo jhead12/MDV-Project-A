@@ -26,16 +26,18 @@ var contestant ="John";
 var cookTime = 60;
 var foodItems = ["chicken", "vegetables", "potatoes", "desert"];
 var startTime = true;
-var say = console.log()
+var say = function(message){
+	console.log(message);
+};
 
 // Procedure
 var start = function () {
-	if (startTime = true) {
+	if (startTime) {
 		console.log( "The clock has started " +  "You will have " + cookTime + " minutes to Make your dish, Go!!")}
 		
 		else{
 			
-			
+			say(" The contest has not began!")
 			
 		};
 			
@@ -44,19 +46,54 @@ var start = function () {
 	
 start();
 
+// Number Function
 
-
-for (var i=0; cookTime > i; cookTime--) {
+var getTime = function(minutes){
 	
-	console.log("There are "  + cookTime + " minutes Left!");
+	
+	while ( minutes > 10){
+		say(" There are " + minutes + " Left!");
+		minutes-=2;
+		
+		
 };
 
+	if (minutes <= 10) {
+		say("There are lest than 10 minutes to Go!");
+		return minutes;
+		
+	};
+	
+	say("The contest is Over");
+	
+		
+};
+
+getTime(cookTime);
 // Boolean Function
 
-// Number Function
+var whatsCooking = function( item, time){
+		var chickenTime = 20;
+		var potatoTime= 15;
+		var timeLeft = Math.floor(time - cookTime);	
+	if ( item != "vegatables" || "desert") {
+		
+		say( "This" + item +  " should be cooked first! because there is not enough time left!");
+		return;
+	}
+	else{
+		timeLeft = Math.floor(time - cookTime);
+	
+	}		
+	return timeLeft;
+
+};
+var whatsDone = whatsCooking(foodItems[3], 10);
+
+say('We are making good time with our meals' + whatsDone)
+
+
 
 // String Function
 
 // Arrary Function
-
-say.cookTime;
