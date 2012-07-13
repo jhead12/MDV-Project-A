@@ -83,7 +83,7 @@ var getTime = function(minutes){
 	if (minutes == 19) {
 		say("Time is Running Low there " + minutes + " left!");
 		};	
-	while ( (minutes > 0)  &&  (minutes < 19) ) {
+	while ( minutes >= 0  ) {
 		
 		say("Time is Running Low there are " + minutes);
 		minutes--;}
@@ -98,7 +98,7 @@ var getTime = function(minutes){
 	
 		
 
-var minutesLeft = getTime(cookTime);
+
 
 
 
@@ -145,12 +145,12 @@ var whatsCooking = function( item, time){
 		say("we are Making good Time!");
 	
 	}		
-	return timeLeft;
+	return say(contestant + " have won the contest!")
 
 };
-var whatsDone = whatsCooking(foodItems[3], minutesLeft );
+var whatsDone = whatsCooking(foodItems[3], 30 );
 
-say( whatsDone);
+
 
 
 
