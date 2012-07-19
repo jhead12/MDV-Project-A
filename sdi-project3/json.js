@@ -9,8 +9,8 @@
 				"resturantOwner":false,
 				"loves": "Fish",
 				"orign": "New York",
-				"favoriteDish": "favorite Dish",				"personality": "forgiving"			},		{					"first": "Bobby",
-				"last": "Dean",				"FullName":"Bobby Dean",
+				"favoriteDish": "favorite Dish",				"personality": "forgiving"			},		{					"first": "Brian",
+				"last": "Boitan",				"fullName": "Brian Boitan",
 				"restaurant": true,
 				"loves": "Southern",
 				"orign": "Canada",
