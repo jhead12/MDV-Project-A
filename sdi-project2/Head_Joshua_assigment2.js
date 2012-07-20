@@ -88,7 +88,7 @@ var getTime = function(minutes){
 		say("Time is Running Low there are " + minutes);
 		minutes--;}
 		
-		say("The contest is Over");
+		say("The contest is Over");		
 		return minutes;	
 		
 };
