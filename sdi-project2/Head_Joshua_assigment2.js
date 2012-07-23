@@ -93,15 +93,7 @@ var getTime = function(minutes){
 		
 };
 			
-			
 		
-	
-		
-
-
-
-
-
 
 
 // Arrary Function- all the ingrediance that were used for the contest
